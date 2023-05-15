@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title></title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      img {
+        animation: mover 0.5s infinite alternate;
+      }
+      @keyframes mover {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: -8%;
+      "
+    >
+      <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 500;">
+        <!-- aqui abaixo você muda o texto -->
+        Roll it down! 
+      </h1>
+      <img style="height: 100px" src="arrow.png" alt="Descrição da imagem" />
+    </div>
+    <script>
+      window.addEventListener("scroll", function () {
+        if (window.scrollY >= 100) {
+            // aqui abaixo você muda o link de destrino 
+          window.location.href = "https://4347ehw7xe0xgsdlmhk436xb09.hop.clickbank.net/?tid=BingAds";
+        }
+      });
+    </script>
+  </body>
+</html>
